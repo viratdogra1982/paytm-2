@@ -1,4 +1,4 @@
-import QRCode from "react-qr-code";
+
 import { SidebarItem } from "../../components/SidebarItem";
 
 export default function Layout({
