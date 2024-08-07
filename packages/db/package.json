@@ -2,7 +2,7 @@
     "name": "@repo/db",
     "version": "0.0.0", 
     "script":{
-        "dev":"npx prisma generate"
+        "build":"npx prisma generate"
     },
     "dependencies": {
         "@prisma/client": "^5.11.0"
