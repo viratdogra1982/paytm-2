@@ -5,7 +5,9 @@
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"/*.{ts,tsx,md}\"",
+    "start-user-app": "npm run dev",
+    "db:generate":"cd packages/db && npx prisma generate "
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
@@ -20,12 +22,5 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ],
-  "dependencies": {
-    "framer-motion": "^11.3.21",
-    "i18next": "^23.12.2",
-    "next-i18next": "^15.3.1",
-    "react-i18next": "^15.0.0",
-    "react-qr-code": "^2.0.15"
-  }
+  ]
 }
